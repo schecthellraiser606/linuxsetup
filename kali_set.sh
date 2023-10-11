@@ -43,10 +43,10 @@ sudo source anger/bin/activate && sudo pip install angr monkeyhex && sudo deacti
 cd $HOME
 
 # Volatility3
-sudo cd /opt
+cd /opt
 sudo git clone https://github.com/volatilityfoundation/volatility3.git
-cd volatility3 && sudo python3 -m venv vnev
-sudo source ./vnev/bin/activate && sudo pip3 install -r requirements.txt && sudo deactivate
+cd volatility3 && sudo python3 -m venv venv
+sudo source ./venv/bin/activate && sudo pip3 install -r requirements.txt && sudo deactivate
 cd $HOME
 
 # CMSmap
@@ -56,10 +56,10 @@ cd CMSmap && sudo pip3 install .
 cd $HOME
 
 #Docker
-sudo apt install curl gnupg2 apt-transport-https software-properties-common ca-certificates -y
-curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker-archive-keyring.gpg
-echo "deb [arch=amd64] https://download.docker.com/linux/debian buster stable" | sudo tee  /etc/apt/sources.list.d/docker.list
-sudo apt update && sudo apt install docker-ce docker-ce-cli containerd.io docker.io -y
+printf '%s\n' "deb https://download.docker.com/linux/debian bullseye stable" | sudo tee /etc/apt/sources.list.d/docker-ce.list
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker-ce-archive-keyring.gpg
+sudo apt update && sudo apt install -y docker.io docker-ce docker-ce-cli containerd.io
+sudo systemctl enable docker --now
 sudo usermod -aG docker $USER
 newgrp docker
 
