@@ -32,7 +32,7 @@ cd $HOME
 #floss
 cd /opt
 sudo wget https://github.com/mandiant/flare-floss/releases/download/quantumstrand-preview7/quantumstrand-quantumstrand-preview7-linux.zip
-sudo unzip quantumstrand-quantumstrand-preview7-linux.zip
+sudo unzip quantumstrand-quantumstrand-preview7-linux.zip && sudo mv quantumstrand-quantumstrand-preview7-linux floss 
 sudo rm quantumstrand-quantumstrand-preview7-linux.zip
 cd $HOME
 
@@ -56,9 +56,9 @@ cd CMSmap && sudo pip3 install .
 cd $HOME
 
 #Docker
-# sudo apt -y install curl gnupg2 apt-transport-https software-properties-common ca-certificates
-# curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker-ce-archive-keyring.gpg
-# echo "deb [arch=amd64] https://download.docker.com/linux/debian buster stable" | sudo tee /etc/apt/sources.list.d/docker-ce.list
+sudo apt -y install curl gnupg2 apt-transport-https software-properties-common ca-certificates
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker-ce-archive-keyring.gpg
+echo "deb [arch=amd64] https://download.docker.com/linux/debian buster stable" | sudo tee /etc/apt/sources.list.d/docker-ce.list
 sudo apt update && sudo apt install -y docker.io 
 #sudo apt install -y docker-ce docker-ce-cli containerd.io
 sudo systemctl enable docker --now
@@ -75,5 +75,3 @@ cd /opt
 sudo git clone https://github.com/NH-RED-TEAM/RustHound
 cd RustHound && sudo docker build --rm -t rusthound . && sudo docker run --rm -v ./:/usr/src/rusthound rusthound linux_musl
 cd $HOME
-
-# docker enable
