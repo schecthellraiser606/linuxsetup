@@ -32,7 +32,7 @@ cd $HOME
 #floss
 cd /opt
 sudo wget https://github.com/mandiant/flare-floss/releases/download/quantumstrand-preview7/quantumstrand-quantumstrand-preview7-linux.zip
-sudo unzip quantumstrand-quantumstrand-preview7-linux.zip && sudo mv quantumstrand-quantumstrand-preview7-linux floss 
+sudo unzip quantumstrand-quantumstrand-preview7-linux.zip && sudo mv quantumstrand floss 
 sudo rm quantumstrand-quantumstrand-preview7-linux.zip
 cd $HOME
 
@@ -61,7 +61,6 @@ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o 
 echo "deb [arch=amd64] https://download.docker.com/linux/debian buster stable" | sudo tee /etc/apt/sources.list.d/docker-ce.list
 sudo apt update && sudo apt install -y docker.io 
 #sudo apt install -y docker-ce docker-ce-cli containerd.io
-sudo systemctl enable docker --now
 sudo usermod -aG docker $USER
 newgrp docker
 
