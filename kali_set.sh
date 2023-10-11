@@ -72,5 +72,5 @@ sudo git clone https://github.com/NH-RED-TEAM/RustHound.git
 cd RustHound &&  docker build --rm -t rusthound . && docker run --rm -v /opt/RustHound:/usr/src/rusthound rusthound linux_x86_64
 cd $HOME
 
-# docker build --rm -t rusthound .
-# docker run --rm -v ./:/usr/src/rusthound rusthound linux_musl
+# OR
+# docker run --rm -v /opt/RustHound:/usr/src/rusthound rusthound linux_musl
