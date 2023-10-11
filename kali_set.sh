@@ -32,7 +32,7 @@ cd $HOME
 #floss
 cd /opt
 sudo wget https://github.com/mandiant/flare-floss/releases/download/quantumstrand-preview7/quantumstrand-quantumstrand-preview7-linux.zip
-sudo unzip quantumstrand-quantumstrand-preview7-linux.zip && sudo mv quantumstrand floss 
+sudo unzip quantumstrand-quantumstrand-preview7-linux.zip && sudo mv /opt/quantumstrand ./floss 
 sudo rm quantumstrand-quantumstrand-preview7-linux.zip
 cd $HOME
 
