@@ -46,7 +46,7 @@ cd $HOME
 cd /opt
 sudo git clone https://github.com/volatilityfoundation/volatility3.git
 cd volatility3 && sudo python3 -m venv venv
-sudo /opt/volatility3/venv/bin/pip3 install -r requirements.txt
+sudo /opt/volatility3/venv/bin/pip3 install -r requirements-minimal.txt
 cd $HOME
 
 # CMSmap
