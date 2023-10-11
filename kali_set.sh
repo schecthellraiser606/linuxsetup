@@ -76,5 +76,5 @@ sudo mv /tmp/docker-compose-Linux-x86_64 /usr/local/bin/docker-compose
 # Rusthound
 cd /opt
 sudo git clone https://github.com/NH-RED-TEAM/RustHound
-sudo make install
+cd RustHound && sudo make install
 cd $HOME
