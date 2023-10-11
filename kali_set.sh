@@ -21,7 +21,7 @@ sudo dpkg -i rustscan_2.0.1_amd64.deb && sudo rm /tmp/rustscan_2.0.1_amd64.deb
 cd $HOME
 
 # pwn_nomal
-# Please peda
+# Please edit the gdbinit file for writing Pwngdb
 sudo gem install one_gadget
 sudo python3 -m pip install pwntools
 sudo apt install gdb gdb-peda -y
@@ -55,7 +55,8 @@ sudo git clone https://github.com/Dionach/CMSmap.git
 cd CMSmap && sudo pip3 install .
 cd $HOME
 
-#Docker
+# Docker
+# Please run apt install docker-ce docker-ce-cli containerd.io docker.io
 echo "\$nrconf{restart} = 'a';" | sudo tee /etc/needrestart/conf.d/50-autorestart.conf
 sudo apt -y install curl gnupg2 apt-transport-https software-properties-common ca-certificates
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker-ce-archive-keyring.gpg
@@ -66,6 +67,7 @@ cd /tmp
 curl -s https://api.github.com/repos/docker/compose/releases/latest | grep browser_download_url  | grep docker-compose-linux-x86_64 | cut -d '"' -f 4 | wget -qi -
 chmod +x docker-compose-linux-x86_64
 sudo mv /tmp/docker-compose-Linux-x86_64 /usr/local/bin/docker-compose
+cd $HOME
 
 # sudo apt install -y docker-ce docker-ce-cli containerd.io docker.io
 # sudo usermod -aG docker $USER
@@ -74,7 +76,10 @@ sudo mv /tmp/docker-compose-Linux-x86_64 /usr/local/bin/docker-compose
 
 
 # Rusthound
+# Please run docker run rusthound after install docker
 cd /opt
-sudo git clone https://github.com/NH-RED-TEAM/RustHound
-cd RustHound && sudo make install
+sudo git clone https://github.com/NH-RED-TEAM/RustHound.git
 cd $HOME
+
+# docker build --rm -t rusthound .
+# docker run --rm -v ./:/usr/src/rusthound rusthound linux_musl
