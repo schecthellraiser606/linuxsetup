@@ -39,14 +39,14 @@ cd $HOME
 # angr
 cd /opt
 sudo python3 -m venv anger
-source anger/bin/activate && sudo pip install angr monkeyhex && sudo deactivate
+source /opt/anger/bin/activate && sudo pip install angr monkeyhex && sudo deactivate
 cd $HOME
 
 # Volatility3
 cd /opt
 sudo git clone https://github.com/volatilityfoundation/volatility3.git
 cd volatility3 && sudo python3 -m venv venv
-source ./venv/bin/activate && sudo pip3 install -r requirements.txt && deactivate
+source /opt/volatility3/venv/bin/activate && pip3 install -r requirements.txt && deactivate
 cd $HOME
 
 # CMSmap
