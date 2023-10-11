@@ -57,7 +57,6 @@ cd $HOME
 
 # Docker
 # Please run apt install docker-ce docker-ce-cli containerd.io docker.io
-echo "\$nrconf{restart} = 'a';" | sudo tee /etc/needrestart/conf.d/50-autorestart.conf
 sudo apt -y install curl gnupg2 apt-transport-https software-properties-common ca-certificates
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker-ce-archive-keyring.gpg
 echo "deb [arch=amd64] https://download.docker.com/linux/debian buster stable" | sudo tee /etc/apt/sources.list.d/docker-ce.list
