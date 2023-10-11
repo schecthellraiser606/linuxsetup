@@ -69,7 +69,7 @@ cd $HOME
 # Rusthound
 cd /opt
 sudo git clone https://github.com/NH-RED-TEAM/RustHound.git
-cd RustHound &&  docker build --rm -t rusthound . && docker run --rm -v /opt/RustHound:/usr/src/rusthound rusthound linux_x86_64
+cd RustHound &&  docker build --rm -t rusthound . && docker run --rm -v /opt/RustHound:/usr/src/rusthound rusthound linux_musl
 cd $HOME
 
 # docker build --rm -t rusthound .
