@@ -60,7 +60,6 @@ sudo apt -y install curl gnupg2 apt-transport-https software-properties-common c
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker-ce-archive-keyring.gpg
 echo "deb [arch=amd64] https://download.docker.com/linux/debian buster stable" | sudo tee /etc/apt/sources.list.d/docker-ce.list
 sudo apt update && sudo apt install -y docker.io && sudo apt install -y docker-ce docker-ce-cli containerd.io
-sudo systemctl enable docker --now
 sudo usermod -aG docker $USER
 newgrp docker
 
@@ -74,3 +73,6 @@ cd /opt
 sudo git clone https://github.com/NH-RED-TEAM/RustHound
 cd RustHound && sudo docker build --rm -t rusthound . && sudo docker run --rm -v ./:/usr/src/rusthound rusthound linux_musl
 cd $HOME
+
+# docker enable
+sudo systemctl enable docker --now
