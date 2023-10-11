@@ -63,7 +63,7 @@ cd $HOME
 # echo "deb [arch=amd64] https://download.docker.com/linux/debian buster stable" | sudo tee /etc/apt/sources.list.d/docker-ce.list
 sudo apt install -y docker.io
 sudo usermod -aG docker $USER
-newgrp docker
+sudo newgrp docker
 
 cd /tmp
 curl -s https://api.github.com/repos/docker/compose/releases/latest | grep browser_download_url  | grep docker-compose-linux-x86_64 | cut -d '"' -f 4 | wget -qi -
