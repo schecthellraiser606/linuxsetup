@@ -2,7 +2,13 @@ cd $HOME
 sudo remnux upgrade
 sudo apt update && sudo apt upgrade -y
 
-sudo apt install python3-pip python3-venv -y
+sudo apt install python3-pip python3-venv gdb-peda -y
+
+# pwntools
+python3 -m pip install pwntools
+cd Documents 
+git clone https://github.com/scwuaptx/Pwngdb.git 
+cd $HOME
 
 # steg
 sudo apt install steghide stegcracker -y
