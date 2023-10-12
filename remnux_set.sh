@@ -5,6 +5,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install python3-pip python3-venv gdb-peda -y
 
 # pwntools
+# Please edit the gdbinit file for writing Pwngdb
 python3 -m pip install pwntools
 cd Documents 
 git clone https://github.com/scwuaptx/Pwngdb.git 
