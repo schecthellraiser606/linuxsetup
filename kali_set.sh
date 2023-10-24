@@ -1,7 +1,7 @@
 sudo apt update && sudo apt upgrade -y
 
 sudo apt install python3-pip python3-venv -y
-sudo pip install uploadserver kerbrute
+sudo pip install uploadserver kerbrute git-dumper
 
 sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl -y
 
