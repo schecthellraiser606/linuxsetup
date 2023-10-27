@@ -2,7 +2,7 @@ cd $HOME
 sudo remnux upgrade
 sudo apt update && sudo apt upgrade -y
 
-sudo apt install python3-pip python3-venv gdb-peda -y
+sudo apt install python3-pip python3-venv gdb-peda terminator -y
 
 # pwntools
 # Please edit the gdbinit file for writing Pwngdb
