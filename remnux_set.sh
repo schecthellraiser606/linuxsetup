@@ -3,6 +3,7 @@ sudo remnux upgrade
 sudo apt update && sudo apt upgrade -y
 
 sudo apt install python3-pip python3-venv gdb-peda terminator -y
+sudo pip install msoffcrypto-tool
 
 # pwntools
 # Please edit the gdbinit file for writing Pwngdb
