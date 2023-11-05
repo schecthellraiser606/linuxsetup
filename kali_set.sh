@@ -77,6 +77,13 @@ cd /opt/ghidra_opt && sudo mkdir ghidra_DATA && cd ghidra_DATA
 sudo git clone https://github.com/AllsafeCyberSecurity/Ghidra_Data_Type
 cd $HOME
 
+# jwt_tool
+cd /opt
+sudo git clone https://github.com/ticarpi/jwt_tool.git
+cd jwt_tool && sudo python3 -m venv venv
+sudo /opt/venv/bin/pip3 install -r requirements.txt
+cd $HOME
+
 # Rusthound
 cd /opt
 sudo git clone https://github.com/NH-RED-TEAM/RustHound.git
