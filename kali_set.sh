@@ -22,13 +22,22 @@ sudo dpkg -i rustscan_2.0.1_amd64.deb && sudo rm /tmp/rustscan_2.0.1_amd64.deb
 cd $HOME
 
 # pwn_nomal
+# Please edit the gdbinit file for writing Pwngdb
 sudo gem install one_gadget
 sudo python3 -m pip install pwntools
 sudo apt install gdb gdb-peda -y
 cd /opt
-sudo git clone https://github.com/pwndbg/pwndbg
-cd pwndbg && sudo ./setup.sh
-sudo echo "source /opt/pwndbg/gdbinit.py" >> /etc/gdb/gdbinit
+sudo git clone https://github.com/scwuaptx/Pwngdb.git 
+sudo echo "source /usr/share/gdb-peda/peda.py" > /etc/gdb/gdbinit
+sudo echo "source /opt/Pwngdb/pwngdb.py" >> /etc/gdb/gdbinit
+sudo echo "source /opt/Pwngdb/angelheap/gdbinit.py" >> /etc/gdb/gdbinit
+sudo echo "\n" >> /etc/gdb/gdbinit
+sudo echo "define hook-run" >> /etc/gdb/gdbinit
+sudo echo "python" >> /etc/gdb/gdbinit
+sudo echo "import angelheap" >> /etc/gdb/gdbinit
+sudo echo "angelheap.init_angelheap()" >> /etc/gdb/gdbinit
+sudo echo "end" >> /etc/gdb/gdbinit
+sudo echo "end" >> /etc/gdb/gdbinit
 cd $HOME
 
 #floss
