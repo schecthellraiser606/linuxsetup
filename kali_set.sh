@@ -30,9 +30,13 @@ cd /opt
 sudo git clone https://github.com/apogiatzis/gdb-peda-pwndbg-gef 
 sudo git clone https://github.com/scwuaptx/Pwngdb
 cd gdb-peda-pwndbg-gef && sudo ./install.sh
-sudo mv /root/gef /opt && sudo mv /root/pwndbg /opt && sudo mv /root/peda /opt && sudo mv /root/peda-arm /opt && sudo rm /root/.gdbinit
-cd /tmp && wget https://raw.githubusercontent.com/schecthellraiser606/linuxsetup/main/gdbinit
-sudo cat /tmp/gdbinit > /etc/gdb/gdbinit && rm /tmp/gdbinit
+sudo mv /root/gef /opt
+sudo mv /root/pwndbg /opt
+sudo mv /root/peda /opt
+sudo mv /root/peda-arm /opt
+sudo rm /root/.gdbinit
+# cd /tmp && wget https://raw.githubusercontent.com/schecthellraiser606/linuxsetup/main/gdbinit
+sudo cat "$(curl -fsSL https://raw.githubusercontent.com/schecthellraiser606/linuxsetup/main/gdbinit)" > /etc/gdb/gdbinit && rm /tmp/gdbinit
 
 cd $HOME
 
