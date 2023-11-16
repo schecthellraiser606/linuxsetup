@@ -25,14 +25,14 @@ cd $HOME
 # Please edit the gdbinit file for writing Pwngdb
 sudo gem install one_gadget
 sudo python3 -m pip install pwntools
-sudo apt install gdb gdb-peda -y
+sudo apt install gdb -y
 cd /opt
-sudo git clone https://github.com/apogiatzis/gdb-peda-pwndbg-gef
+sudo git clone https://github.com/apogiatzis/gdb-peda-pwndbg-gef 
+sudo git clone https://github.com/scwuaptx/Pwngdb
 cd gdb-peda-pwndbg-gef && sudo ./install.sh
 sudo mv /root/gef /opt && sudo mv /root/pwndbg /opt && sudo mv /root/peda /opt && sudo mv /root/peda-arm /opt && sudo rm /root/.gdbinit
-wget 
-cd /opt
-sudo git clone 
+cd /tmp && wget https://raw.githubusercontent.com/schecthellraiser606/linuxsetup/main/gdbinit
+sudo cat /tmp/gdbinit > /etc/gdb/gdbinit && rm /tmp/gdbinit
 
 cd $HOME
 
