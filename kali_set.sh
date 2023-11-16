@@ -27,17 +27,13 @@ sudo gem install one_gadget
 sudo python3 -m pip install pwntools
 sudo apt install gdb gdb-peda -y
 cd /opt
-sudo git clone https://github.com/scwuaptx/Pwngdb.git 
-sudo echo "source /usr/share/gdb-peda/peda.py" > /etc/gdb/gdbinit
-sudo echo "source /opt/Pwngdb/pwngdb.py" >> /etc/gdb/gdbinit
-sudo echo "source /opt/Pwngdb/angelheap/gdbinit.py" >> /etc/gdb/gdbinit
-sudo echo "\n" >> /etc/gdb/gdbinit
-sudo echo "define hook-run" >> /etc/gdb/gdbinit
-sudo echo "python" >> /etc/gdb/gdbinit
-sudo echo "import angelheap" >> /etc/gdb/gdbinit
-sudo echo "angelheap.init_angelheap()" >> /etc/gdb/gdbinit
-sudo echo "end" >> /etc/gdb/gdbinit
-sudo echo "end" >> /etc/gdb/gdbinit
+sudo git clone https://github.com/apogiatzis/gdb-peda-pwndbg-gef
+cd gdb-peda-pwndbg-gef && sudo ./install.sh
+sudo mv /root/gef /opt && sudo mv /root/pwndbg /opt && sudo mv /root/peda /opt && sudo mv /root/peda-arm /opt && sudo rm /root/.gdbinit
+wget 
+cd /opt
+sudo git clone 
+
 cd $HOME
 
 #floss
