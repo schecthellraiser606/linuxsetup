@@ -35,7 +35,7 @@ sudo mv /root/pwndbg /opt
 sudo mv /root/peda /opt
 sudo mv /root/peda-arm /opt
 sudo rm /root/.gdbinit
-sudo sh -c 'cat "$(curl -fsSL https://raw.githubusercontent.com/schecthellraiser606/linuxsetup/main/gdbinit)"' > /etc/gdb/gdbinit
+cat "$(curl -fsSL https://raw.githubusercontent.com/schecthellraiser606/linuxsetup/main/gdbinit)" | sudo tee /etc/gdb/gdbinit
 cd $HOME
 
 #floss
