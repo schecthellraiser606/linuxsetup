@@ -2,14 +2,14 @@ cd $HOME
 sudo remnux upgrade
 sudo apt update && sudo apt upgrade -y
 
-sudo apt install python3-pip python3-venv gdb-peda terminator -y
+sudo apt install python3-pip python3-venv gdb-peda terminator pff-tools -y
 sudo pip install msoffcrypto-tool
 
 # pwntools
 # Please edit the gdbinit file for writing Pwngdb
 python3 -m pip install pwntools
-cd Documents 
-git clone https://github.com/scwuaptx/Pwngdb.git 
+cd Documents
+git clone https://github.com/scwuaptx/Pwngdb
 cd $HOME
 
 # steg
@@ -31,7 +31,7 @@ cd $HOME
 # angr
 cd Documents
 python3 -m venv anger
-sudo /home/remnux/Documents/anger/bin/pip3 install angr monkeyhex
+/home/remnux/Documents/anger/bin/pip3 install angr monkeyhex
 cd $HOME
 
 #floss

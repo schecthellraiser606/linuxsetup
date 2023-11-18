@@ -22,7 +22,6 @@ sudo dpkg -i rustscan_2.0.1_amd64.deb && sudo rm /tmp/rustscan_2.0.1_amd64.deb
 cd $HOME
 
 # pwn_nomal
-# Please edit the gdbinit file for writing Pwngdb
 sudo gem install one_gadget
 sudo python3 -m pip install pwntools
 sudo apt install gdb -y
