@@ -39,6 +39,8 @@ cd /tmp && wget https://raw.githubusercontent.com/schecthellraiser606/linuxsetup
 cat /tmp/gdbinit | sudo tee /etc/gdb/gdbinit
 rm /tmp/gdbinit
 cd $HOME
+echo "alias gdb='exec gdb -q -ex init-gdb \"\$@\"'" | sudo tee -a /root/.zshrc
+echo "alias gdb='exec gdb -q -ex init-gdb \"\$@\"'" >> $HOME/.zshrc
 
 #floss
 cd /opt

@@ -1,4 +1,19 @@
 # System-wide GDB initialization file.
+define init-gdb
+source /opt/peda/peda.py
+source /opt/Pwngdb/pwngdb.py
+source /opt/Pwngdb/angelheap/gdbinit.py
+define hook-run
+python
+import angelheap
+angelheap.init_angelheap()
+end
+end
+end
+document init-gdb
+Initializes the PEDA (Python Exploit Development Assistant for GDB) framework
+end
+
 define init-peda
 source /opt/peda/peda.py
 source /opt/Pwngdb/pwngdb.py
