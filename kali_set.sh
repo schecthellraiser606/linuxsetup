@@ -4,7 +4,7 @@ sudo apt install python3-pip python3-venv -y
 sudo pip install uploadserver kerbrute git-dumper msoffcrypto-tool
 sudo pip install certipy-ad
 
-sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator -y
+sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite -y
 
 # steg
 sudo apt install steghide stegcracker -y
