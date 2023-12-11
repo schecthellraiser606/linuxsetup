@@ -6,6 +6,8 @@ sudo pip install certipy-ad
 
 sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists -y
 
+sudo wget https://raw.githubusercontent.com/flozz/p0wny-shell/master/shell.php -O /usr/share/webshells/php/p0wny-shell.php
+
 # steg
 sudo apt install steghide stegcracker -y
 sudo gem install zsteg
