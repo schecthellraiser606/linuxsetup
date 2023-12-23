@@ -40,9 +40,13 @@ sudo rm /root/.gdbinit
 cd /tmp && wget https://raw.githubusercontent.com/schecthellraiser606/linuxsetup/main/gdbinit
 cat /tmp/gdbinit | sudo tee /etc/gdb/gdbinit
 rm /tmp/gdbinit
-cd $HOME
 echo "alias gdb='exec gdb -q -ex init-gdb \"\$@\"'" | sudo tee -a /root/.zshrc
 echo "alias gdb='exec gdb -q -ex init-gdb \"\$@\"'" >> $HOME/.zshrc
+# pwninit
+cd /tmp
+wget https://github.com/io12/pwninit/releases/download/3.3.0/pwninit
+sudo chmod +x /tmp/pwninit && sudo mv /tmp/pwninit /usr/local/bin/pwninit
+cd $HOME
 
 #floss
 cd /opt
