@@ -59,9 +59,12 @@ sudo git clone https://github.com/AllsafeCyberSecurity/Ghidra_Data_Type
 cd $HOME
 
 # Rustscan
-docker pull rustscan/rustscan:1.6.0
-echo "alias rustscan='docker run -it --rm --name rustscan rustscan/rustscan:2.1.1'" | sudo tee -a /root/.zshrc
-echo "alias rustscan='docker run -it --rm --name rustscan rustscan/rustscan:2.1.1'" >> $HOME/.zshrc
+cd /opt
+sudo git clone https://github.com/RustScan/RustScan.git
+cd RustScan && docker build -t rustscan .
+echo "alias rustscan='docker run -it --rm rustscan'" | sudo tee -a /root/.zshrc
+echo "alias rustscan='docker run -it --rm rustscan'" >> $HOME/.zshrc
+cd $HOME
 
 # jwt_tool
 cd /opt
