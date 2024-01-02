@@ -4,7 +4,7 @@ sudo apt install python3-pip python3-venv -y
 sudo pip install uploadserver kerbrute git-dumper msoffcrypto-tool
 sudo pip install certipy-ad wsgidav
 
-sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists -y
+sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists  -y
 
 sudo wget https://raw.githubusercontent.com/flozz/p0wny-shell/master/shell.php -O /usr/share/webshells/php/p0wny-shell.php
 
@@ -38,6 +38,13 @@ cd $HOME
 cd /opt
 sudo git clone https://github.com/Dionach/CMSmap.git
 cd CMSmap && sudo pip3 install .
+cd $HOME
+
+# Autorecon
+cd /opt
+sudo apt install feroxbuster oscanner tnscmd10g wkhtmltopdf -y
+sudo python3 -m venv autorecon
+sudo /opt/autorecon/bin/pip3 install git+https://github.com/Tib3rius/AutoRecon.git
 cd $HOME
 
 # Docker
