@@ -65,14 +65,6 @@ cd /opt/ghidra_opt && sudo mkdir ghidra_DATA && cd ghidra_DATA
 sudo git clone https://github.com/AllsafeCyberSecurity/Ghidra_Data_Type
 cd $HOME
 
-# Rustscan
-cd /opt
-sudo git clone https://github.com/RustScan/RustScan.git
-cd RustScan && docker build -t rustscan .
-echo "alias rustscan='docker run -it --rm rustscan'" | sudo tee -a /root/.zshrc
-echo "alias rustscan='docker run -it --rm rustscan'" >> $HOME/.zshrc
-cd $HOME
-
 # jwt_tool
 cd /opt
 sudo git clone https://github.com/ticarpi/jwt_tool.git
