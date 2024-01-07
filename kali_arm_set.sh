@@ -4,7 +4,7 @@ sudo apt install python3-pip python3-venv -y
 sudo pip install uploadserver kerbrute git-dumper msoffcrypto-tool
 sudo pip install certipy-ad wsgidav
 
-sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists  -y
+sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists ibus-anthy -y
 
 sudo wget https://raw.githubusercontent.com/flozz/p0wny-shell/master/shell.php -O /usr/share/webshells/php/p0wny-shell.php
 
