@@ -8,6 +8,7 @@ sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobust
 sudo apt install wine shellter -y
 
 sudo wget https://raw.githubusercontent.com/flozz/p0wny-shell/master/shell.php -O /usr/share/webshells/php/p0wny-shell.php
+sudo wget https://github.com/mitchmoser/SharpShares/releases/download/v2.4/SharpShares.exe -O /usr/share/windows-resources/binaries/SharpShares.exe
 
 # steg
 sudo apt install steghide stegcracker -y
