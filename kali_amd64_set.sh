@@ -15,7 +15,7 @@ sudo apt install steghide stegcracker -y
 sudo gem install zsteg
 
 # Ghostpack
-cd /opt
+cd /usr/share/windows-resources/binaries
 sudo git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git
 cd $HOME
 
