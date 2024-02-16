@@ -114,6 +114,13 @@ cd $HOME
 sudo go install github.com/projectdiscovery/katana/cmd/katana@latest
 sudo mv /root/go/bin/katana /usr/local/bin/
 
+#web-wordlist-generator
+cd /opt
+sudo git clone https://github.com/OsmanKandemir/web-wordlist-generator
+cd web-wordlist-generator && sudo python3 -m venv venv
+sudo /opt/web-wordlist-generator/venv/bin/pip3 install -r requirements.txt
+cd $HOME
+
 # Rusthound
 cd /opt
 sudo git clone https://github.com/NH-RED-TEAM/RustHound.git
