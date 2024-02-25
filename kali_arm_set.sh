@@ -8,6 +8,7 @@ sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobust
 
 sudo wget https://raw.githubusercontent.com/flozz/p0wny-shell/master/shell.php -O /usr/share/webshells/php/p0wny-shell.php
 sudo wget https://github.com/mitchmoser/SharpShares/releases/download/v2.4/SharpShares.exe -O /usr/share/windows-resources/binaries/SharpShares.exe
+sudo wget https://github.com/BeichenDream/SharpToken/releases/download/V1.2/SharpToken.exe -O /usr/share/windows-resources/binaries/SharpToken.exe
 
 # steg
 sudo apt install steghide stegcracker -y
@@ -77,11 +78,26 @@ cd $HOME
 sudo go install github.com/projectdiscovery/katana/cmd/katana@latest
 sudo mv /root/go/bin/katana /usr/local/bin/
 
+#jsleak
+sudo go install github.com/channyein1337/jsleak@latest
+sudo mv /root/go/bin/jsleak /usr/local/bin/
+
+#mantra
+sudo go install github.com/MrEmpy/mantra@latest
+sudo mv /root/go/bin/mantra /usr/local/bin/
+
 #web-wordlist-generator
 cd /opt
 sudo git clone https://github.com/OsmanKandemir/web-wordlist-generator
 cd web-wordlist-generator && sudo python3 -m venv venv
 sudo /opt/web-wordlist-generator/venv/bin/pip3 install -r requirements.txt
+cd $HOME
+
+# MSSqlPwner
+cd /opt
+sudo git clone https://github.com/ScorpionesLabs/MSSqlPwner
+cd MSSqlPwner && sudo python3 -m venv venv
+sudo /opt/MSSqlPwner/venv/bin/pip3 install -r requirements.txt
 cd $HOME
 
 # Rusthound
