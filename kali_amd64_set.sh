@@ -141,7 +141,6 @@ cd $HOME
 cd /opt
 sudo git clone https://github.com/Ekultek/WhatWaf
 cd WhatWaf && pip3 install -r requirements.txt
-sudo cp whatwaf /usr/local/bin/
 
 # Rusthound
 cd /opt
