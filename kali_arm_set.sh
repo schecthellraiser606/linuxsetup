@@ -100,6 +100,12 @@ cd MSSqlPwner && sudo python3 -m venv venv
 sudo /opt/MSSqlPwner/venv/bin/pip3 install -r requirements.txt
 cd $HOME
 
+# WhatWaf
+cd /opt
+sudo git clone https://github.com/Ekultek/WhatWaf
+cd WhatWaf && pip3 install -r requirements.txt
+sudo cp whatwaf /usr/local/bin/
+
 # Rusthound
 cd /opt
 sudo git clone https://github.com/NH-RED-TEAM/RustHound.git
