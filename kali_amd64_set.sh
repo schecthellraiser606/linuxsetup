@@ -142,6 +142,13 @@ cd /opt
 sudo git clone https://github.com/Ekultek/WhatWaf
 cd WhatWaf && pip3 install -r requirements.txt
 
+# LeakSearch
+cd /opt
+sudo git clone https://github.com/JoelGMSec/LeakSearch
+cd LeakSearch && sudo python3 -m venv venv
+sudo /opt/LeakSearch/venv/bin/pip3 install -r requirements.txt
+cd $HOME
+
 # Rusthound
 cd /opt
 sudo git clone https://github.com/NH-RED-TEAM/RustHound.git
