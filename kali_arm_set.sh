@@ -31,10 +31,9 @@ sudo /opt/anger/bin/pip3 install angr monkeyhex
 cd $HOME
 
 # Volatility3
-cd /opt
-sudo git clone https://github.com/volatilityfoundation/volatility3.git
-cd volatility3 && sudo python3 -m venv venv
-sudo /opt/volatility3/venv/bin/pip3 install -r requirements-minimal.txt
+cd /tmp
+wget https://github.com/volatilityfoundation/volatility3/releases/download/v2.5.2/volatility3-2.5.2-py3-none-any.whl
+sudo pip install /tmp/volatility3-2.5.2-py3-none-any.whl && rm /tmp/volatility3-2.5.2-py3-none-any.whl
 cd $HOME
 
 # CMSmap
