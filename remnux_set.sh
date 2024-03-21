@@ -2,7 +2,7 @@ cd $HOME
 sudo remnux upgrade
 sudo apt update && sudo apt upgrade -y
 
-sudo apt install python3-pip python3-venv terminator pff-tools burpsuite thunderbird -y
+sudo apt install python3-pip python3-venv terminator pff-tools thunderbird -y
 sudo pip install msoffcrypto-tool
 
 # pwntools
