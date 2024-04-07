@@ -115,6 +115,12 @@ cd LeakSearch && sudo python3 -m venv venv
 sudo /opt/LeakSearch/venv/bin/pip3 install -r requirements.txt
 cd $HOME
 
+# apk2url
+cd /tmp
+git clone https://github.com/n0mi1k/apk2url
+cd apk2url && sudo ./install.sh
+cd $HOME && rm -rf /tmp/apk2url
+
 # Rusthound
 cd /opt
 sudo git clone https://github.com/NH-RED-TEAM/RustHound.git

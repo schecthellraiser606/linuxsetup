@@ -5,7 +5,7 @@ sudo pip install uploadserver kerbrute git-dumper msoffcrypto-tool
 sudo pip install certipy-ad wsgidav
 
 sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists patchelf mingw-w64 sshuttle xxd peass jd-gui keepassx -y
-sudo apt install wine shellter -y
+sudo apt install wine shellter qemu-user -y
 
 sudo wget https://raw.githubusercontent.com/flozz/p0wny-shell/master/shell.php -O /usr/share/webshells/php/p0wny-shell.php
 sudo wget https://github.com/mitchmoser/SharpShares/releases/download/v2.4/SharpShares.exe -O /usr/share/windows-resources/binaries/SharpShares.exe
@@ -151,6 +151,12 @@ sudo git clone https://github.com/JoelGMSec/LeakSearch
 cd LeakSearch && sudo python3 -m venv venv
 sudo /opt/LeakSearch/venv/bin/pip3 install -r requirements.txt
 cd $HOME
+
+# apk2url
+cd /tmp
+git clone https://github.com/n0mi1k/apk2url
+cd apk2url && sudo ./install.sh
+cd $HOME && rm -rf /tmp/apk2url
 
 # Rusthound
 cd /opt

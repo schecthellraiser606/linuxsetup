@@ -56,3 +56,9 @@ cd $HOME
 # Docker
 sudo apt install -y docker.io
 sudo usermod -aG docker $USER
+
+# apk2url
+cd /tmp
+git clone https://github.com/n0mi1k/apk2url
+cd apk2url && sudo ./install.sh
+cd $HOME && rm -rf /tmp/apk2url
