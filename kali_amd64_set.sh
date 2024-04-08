@@ -30,7 +30,7 @@ cd $HOME
 # pwn_nomal
 sudo gem install one_gadget
 sudo python3 -m pip install pwntools
-sudo apt install gdb -y
+sudo apt install gdb ropper -y
 cd /opt
 sudo git clone https://github.com/apogiatzis/gdb-peda-pwndbg-gef 
 sudo git clone https://github.com/scwuaptx/Pwngdb
