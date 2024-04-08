@@ -13,7 +13,7 @@ git clone https://github.com/scwuaptx/Pwngdb
 cd $HOME
 
 # steg
-sudo apt install steghide stegcracker -y
+sudo apt install steghide -y
 sudo gem install zsteg
 
 # ViperMonkey
