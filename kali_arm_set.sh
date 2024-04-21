@@ -130,11 +130,22 @@ cd LeakSearch && sudo python3 -m venv venv
 sudo /opt/LeakSearch/venv/bin/pip3 install -r requirements.txt
 cd $HOME
 
+# SmuggleFuzz
+sudo go install github.com/moopinger/smugglefuzz@latest
+sudo mv /root/go/bin/smugglefuzz /usr/local/bin/
+
 # apk2url
 cd /tmp
 git clone https://github.com/n0mi1k/apk2url
 cd apk2url && sudo ./install.sh
 cd $HOME && rm -rf /tmp/apk2url
+
+# APKDeepLens
+cd /opt
+sudo git clone https://github.com/d78ui98/APKDeepLens/tree/main
+cd APKDeepLens && sudo python3 -m venv venv
+sudo /opt/APKDeepLens/venv/bin/pip3 install -r requirements.txt
+cd $HOME
 
 # Rusthound
 cd /opt
