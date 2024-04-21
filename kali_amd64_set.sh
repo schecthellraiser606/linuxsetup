@@ -164,7 +164,7 @@ cd $HOME && rm -rf /tmp/apk2url
 
 # APKDeepLens
 cd /opt
-sudo git clone https://github.com/d78ui98/APKDeepLens/tree/main
+sudo git clone https://github.com/d78ui98/APKDeepLens
 cd APKDeepLens && sudo python3 -m venv venv
 sudo /opt/APKDeepLens/venv/bin/pip3 install -r requirements.txt
 cd $HOME
