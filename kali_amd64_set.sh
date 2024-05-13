@@ -2,7 +2,7 @@ sudo apt update && sudo apt upgrade -y
 
 sudo apt install python3-pip python3-venv -y
 sudo pip install uploadserver kerbrute git-dumper msoffcrypto-tool
-sudo pip install certipy-ad wsgidav
+sudo pip install certipy-ad wsgidav sqlmc
 
 sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists patchelf mingw-w64 sshuttle xxd peass jd-gui keepassx powershell-empire -y
 sudo apt install wine shellter qemu-user -y
