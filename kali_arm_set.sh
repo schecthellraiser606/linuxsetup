@@ -134,6 +134,13 @@ cd $HOME
 sudo go install github.com/moopinger/smugglefuzz@latest
 sudo mv /root/go/bin/smugglefuzz /usr/local/bin/
 
+# noPac
+cd /opt
+sudo git clone https://github.com/Ridter/noPac
+cd noPac && sudo python3 -m venv venv
+sudo /opt/noPac/venv/bin/pip3 install -r requirements.txt
+cd $HOME
+
 # apk2url
 cd /tmp
 git clone https://github.com/n0mi1k/apk2url
