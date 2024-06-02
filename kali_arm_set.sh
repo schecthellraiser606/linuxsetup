@@ -141,6 +141,11 @@ cd noPac && sudo python3 -m venv venv
 sudo /opt/noPac/venv/bin/pip3 install -r requirements.txt
 cd $HOME
 
+# PetitPotam
+cd /opt
+sudo git clone https://github.com/topotam/PetitPotam
+cd $HOME
+
 # apk2url
 cd /tmp
 git clone https://github.com/n0mi1k/apk2url
