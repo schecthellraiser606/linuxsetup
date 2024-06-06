@@ -1,7 +1,7 @@
 sudo apt update && sudo apt upgrade -y
 
 sudo apt install python3-pip python3-venv -y
-sudo pip install uploadserver kerbrute git-dumper msoffcrypto-tool
+sudo pip install uploadserver git-dumper msoffcrypto-tool
 sudo pip install certipy-ad wsgidav sqlmc
 
 sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator seclists sshuttle peass jd-gui keepassx qemu-user powershell-empire snmp-mibs-downloader -y
@@ -91,6 +91,10 @@ sudo git clone https://github.com/ticarpi/jwt_tool.git
 cd jwt_tool && sudo python3 -m venv venv
 sudo /opt/jwt_tool/venv/bin/pip3 install -r requirements.txt
 cd $HOME
+
+# kerbrute
+sudo go install github.com/ropnop/kerbrute@latest 
+sudo mv /root/go/bin/kerbrute /usr/local/bin/
 
 #katana
 sudo go install github.com/projectdiscovery/katana/cmd/katana@latest
