@@ -25,6 +25,7 @@ cd $HOME
 sudo python3 -m pip install pwntools
 sudo apt install gdb ropper -y
 cd /opt
+sudo git clone https://github.com/Rizer0/Ropdump
 sudo git clone https://github.com/apogiatzis/gdb-peda-pwndbg-gef 
 sudo git clone https://github.com/scwuaptx/Pwngdb
 cd gdb-peda-pwndbg-gef && sudo ./install.sh
