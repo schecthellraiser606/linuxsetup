@@ -30,6 +30,7 @@ cd $HOME
 
 # pwn_nomal
 sudo gem install one_gadget
+sudo gem install seccomp-tools
 sudo python3 -m pip install pwntools
 sudo apt install gdb ropper -y
 cd /opt
