@@ -2,7 +2,7 @@ sudo apt update && sudo apt upgrade -y
 
 sudo apt install python3-pip python3-venv -y
 sudo pip install uploadserver git-dumper msoffcrypto-tool
-sudo pip install certipy-ad wsgidav sqlmc
+sudo pip install certipy-ad wsgidav sqlmc pipx
 
 sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists patchelf mingw-w64 sshuttle xxd peass jd-gui keepassx powershell-empire snmp-mibs-downloader -y
 sudo apt install wine shellter qemu-user -y
@@ -108,6 +108,9 @@ sudo git clone https://github.com/0xb0bb/pwndra
 cd /opt/ghidra_opt && sudo mkdir ghidra_DATA && cd ghidra_DATA
 sudo git clone https://github.com/AllsafeCyberSecurity/Ghidra_Data_Type
 cd $HOME
+
+# NetExec
+pipx install git+https://github.com/Pennyw0rth/NetExec
 
 # jwt_tool
 cd /opt
