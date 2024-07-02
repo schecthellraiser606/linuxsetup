@@ -5,7 +5,7 @@ sudo pip install uploadserver git-dumper msoffcrypto-tool
 sudo pip install certipy-ad wsgidav sqlmc
 
 sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists patchelf mingw-w64 sshuttle xxd peass jd-gui keepassx powershell-empire snmp-mibs-downloader netexec -y
-sudo apt install wine shellter qemu-user -y
+sudo apt install wine shellter qemu-user cadaver -y
 
 sudo wget https://raw.githubusercontent.com/flozz/p0wny-shell/master/shell.php -O /usr/share/webshells/php/p0wny-shell.php
 sudo wget https://github.com/mitchmoser/SharpShares/releases/download/v2.4/SharpShares.exe -O /usr/share/windows-resources/binaries/SharpShares.exe
