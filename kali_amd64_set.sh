@@ -114,7 +114,7 @@ cd $HOME
 cd /opt
 sudo git clone https://github.com/PShlyundin/ldap_shell.git
 cd ldap_shell && sudo python3 -m venv venv
-sudo /opt/jwt_tool/venv/bin/pip3 install .
+sudo /opt/jwt_tool/venv/bin/python3 -m pip install .
 cd $HOME
 
 # jwt_tool
