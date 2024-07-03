@@ -110,7 +110,12 @@ cd /opt/ghidra_opt && sudo mkdir ghidra_DATA && cd ghidra_DATA
 sudo git clone https://github.com/AllsafeCyberSecurity/Ghidra_Data_Type
 cd $HOME
 
-
+# ldap_hell
+cd /opt
+sudo git clone https://github.com/PShlyundin/ldap_shell.git
+cd ldap_shell && sudo python3 -m venv venv
+sudo /opt/jwt_tool/venv/bin/pip3 install .
+cd $HOME
 
 # jwt_tool
 cd /opt
