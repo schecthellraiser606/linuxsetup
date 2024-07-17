@@ -12,6 +12,7 @@ sudo wget https://github.com/BeichenDream/SharpToken/releases/download/V1.2/Shar
 sudo wget https://github.com/BeichenDream/GodPotato/releases/download/V1.20/GodPotato-NET4.exe -O /usr/share/windows-resources/binaries/GodPotato-NET4.exe
 sudo wget https://github.com/SnaffCon/Snaffler/releases/download/1.0.150/Snaffler.exe -O /usr/share/windows-resources/binaries/Snaffler.exe
 sudo wget https://github.com/AlessandroZ/LaZagne/releases/download/2.4.3/lazagne.exe -O /usr/share/windows-resources/binaries/lazagne.exe
+sudo wget https://github.com/itm4n/PrintSpoofer/releases/download/v1.0/PrintSpoofer64.exe -O /usr/share/windows-resources/binaries/PrintSpoofer64.exe
 
 # steg
 sudo apt install steghide stegcracker -y
