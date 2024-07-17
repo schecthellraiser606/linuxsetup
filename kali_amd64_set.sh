@@ -4,7 +4,7 @@ sudo apt install python3-pip python3-venv -y
 sudo pip install uploadserver git-dumper msoffcrypto-tool
 sudo pip install certipy-ad wsgidav sqlmc
 
-sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists patchelf mingw-w64 sshuttle xxd peass jd-gui keepassx powershell-empire snmp-mibs-downloader netexec hydra -y
+sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists patchelf mingw-w64 sshuttle xxd peass jd-gui keepassx powershell-empire snmp-mibs-downloader netexec hydra medusa -y
 sudo apt install wine shellter qemu-user cadaver -y
 
 sudo wget https://raw.githubusercontent.com/flozz/p0wny-shell/master/shell.php -O /usr/share/webshells/php/p0wny-shell.php
