@@ -180,6 +180,11 @@ cd noPac && sudo python3 -m venv venv
 sudo /opt/noPac/venv/bin/pip3 install -r requirements.txt
 cd $HOME
 
+# krbrelayx
+cd /opt
+sudo git clone https://github.com/dirkjanm/krbrelayx
+cd $HOME
+
 # PetitPotam
 cd /opt
 sudo git clone https://github.com/topotam/PetitPotam
