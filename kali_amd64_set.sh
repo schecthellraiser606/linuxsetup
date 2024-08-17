@@ -183,7 +183,6 @@ cd $HOME
 # krbrelayx
 cd /opt
 sudo git clone https://github.com/dirkjanm/krbrelayx
-cd krbrelayx && sudo wget https://github.com/fortra/impacket/raw/master/examples/findDelegation.py
 cd $HOME
 
 # PetitPotam
