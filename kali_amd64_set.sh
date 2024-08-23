@@ -185,9 +185,10 @@ cd /opt
 sudo git clone https://github.com/dirkjanm/krbrelayx
 cd $HOME
 
-# PetitPotam
+# Coercer
 cd /opt
-sudo git clone https://github.com/topotam/PetitPotam
+sudo python3 -m venv Coercer
+sudo /opt/Coercer/bin/pip install coercer
 cd $HOME
 
 # apk2url
