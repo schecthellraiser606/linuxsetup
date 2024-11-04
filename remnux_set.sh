@@ -47,6 +47,7 @@ mkdir ghidra_opt && cd ghidra_opt && mkdir ghidra_scripts && cd ghidra_scripts
 git clone https://github.com/AllsafeCyberSecurity/ghidra_scripts
 git clone https://github.com/ghidraninja/ghidra_scripts ninja_scripts
 git clone https://github.com/AllsafeCyberSecurity/py-findcrypt-ghidra
+git clone https://github.com/AllsafeCyberSecurity/LazyGhidra
 wget https://raw.githubusercontent.com/mooncat-greenpy/Ghidra_GolangAnalyzerExtension/1584493a62db06348421c3455a4457ca68fd7013/ghidra_scripts/degobfuscate.py
 git clone https://github.com/0xb0bb/pwndra
 cd /opt/ghidra_opt && mkdir ghidra_DATA && cd ghidra_DATA
