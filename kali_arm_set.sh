@@ -88,6 +88,7 @@ sudo wget https://raw.githubusercontent.com/mooncat-greenpy/Ghidra_GolangAnalyze
 sudo git clone https://github.com/0xb0bb/pwndra
 cd /opt/ghidra_opt && sudo mkdir ghidra_DATA && cd ghidra_DATA
 sudo git clone https://github.com/AllsafeCyberSecurity/Ghidra_Data_Type
+sudo git clone https://github.com/LAC-Japan/Ghidra_AntiDebugSeeker
 sudo wget https://github.com/nneonneo/ghidra-wasm-plugin/releases/download/v2.3.0/ghidra_11.0_PUBLIC_20240123_ghidra-wasm-plugin.zip
 cd $HOME
 
