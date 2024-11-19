@@ -1,12 +1,10 @@
 sudo apt update && sudo apt upgrade -y
 
-sudo apt install python3-pip python3-venv pipx -y
-sudo pipx ensurepath
-sudo pipx install uploadserver git-dumper msoffcrypto-tool
-sudo pipx install certipy-ad wsgidav sqlmc
+sudo apt install python3-pip python3-venv -y
+sudo pip install uploadserver git-dumper msoffcrypto-tool
+sudo pip install certipy-ad wsgidav sqlmc
 
-sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists patchelf mingw-w64 sshuttle xxd peass jd-gui keepassx powershell-empire snmp-mibs-downloader netexec hydra medusa -y
-sudo apt install wine shellter qemu-user cadaver irssi ltrace sippts -y
+sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator seclists sshuttle peass jd-gui keepassx qemu-user powershell-empire snmp-mibs-downloader netexec cadaver hydra medusa irssi ltrace sippts -y
 sudo apt install mariadb-client-compat -y
 
 sudo wget https://raw.githubusercontent.com/flozz/p0wny-shell/master/shell.php -O /usr/share/webshells/php/p0wny-shell.php
@@ -26,16 +24,10 @@ cd /usr/share/windows-resources/binaries
 sudo git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git
 cd $HOME
 
-# Install RustScan
-cd /tmp
-wget https://github.com/RustScan/RustScan/releases/download/2.0.1/rustscan_2.0.1_amd64.deb
-sudo dpkg -i rustscan_2.0.1_amd64.deb && sudo rm /tmp/rustscan_2.0.1_amd64.deb
-cd $HOME
-
 # pwn_nomal
-sudo gem install one_gadget
-sudo gem install seccomp-tools
-sudo python3 -m pip install pwntools
+cd /opt
+python3 -m venv pwntool
+sudo /opt/pwntools/bin/pip3 install pwntools
 sudo apt install gdb ropper -y
 cd /opt
 sudo git clone https://github.com/Rizer0/Ropdump
@@ -53,18 +45,6 @@ cat /tmp/gdbinit | sudo tee /etc/gdb/gdbinit
 rm /tmp/gdbinit
 echo "alias gdb='exec gdb -q -ex init-gdb \"\$@\"'" | sudo tee -a /root/.zshrc
 echo "alias gdb='exec gdb -q -ex init-gdb \"\$@\"'" >> $HOME/.zshrc
-# pwninit
-cd /tmp
-wget https://github.com/io12/pwninit/releases/download/3.3.0/pwninit
-sudo chmod +x /tmp/pwninit && sudo mv /tmp/pwninit /usr/local/bin/pwninit
-cd $HOME
-
-#floss
-cd /opt
-sudo wget https://github.com/mandiant/flare-floss/releases/download/quantumstrand-preview7/quantumstrand-quantumstrand-preview7-linux.zip
-sudo unzip quantumstrand-quantumstrand-preview7-linux.zip && sudo mv /opt/quantumstrand ./floss 
-sudo rm quantumstrand-quantumstrand-preview7-linux.zip
-cd $HOME
 
 # angr
 cd /opt
@@ -83,7 +63,7 @@ cd $HOME
 # CMSmap
 cd /opt
 sudo git clone https://github.com/Dionach/CMSmap.git
-cd CMSmap && sudo pip3 install .
+cd CMSmap && sudo pipx install .
 cd $HOME
 
 # Autorecon
@@ -96,10 +76,8 @@ cd $HOME
 # Docker
 sudo apt install -y docker.io
 sudo usermod -aG docker $USER # sudo newgrp docker
-cd /tmp
-curl -s https://api.github.com/repos/docker/compose/releases/latest | grep browser_download_url  | grep docker-compose-linux-x86_64 | cut -d '"' -f 4 | wget -qi -
-chmod +x docker-compose-linux-x86_64 && sudo mv /tmp/docker-compose-linux-x86_64 /usr/local/bin/docker-compose
-cd $HOME
+sudo curl -L --fail https://raw.githubusercontent.com/linuxserver/docker-docker-compose/master/run.sh -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose 
 
 # Ghidra Script
 cd /opt
@@ -153,19 +131,6 @@ cd web-wordlist-generator && sudo python3 -m venv venv
 sudo /opt/web-wordlist-generator/venv/bin/pip3 install -r requirements.txt
 cd $HOME
 
-# MSSqlPwner
-cd /opt
-sudo git clone https://github.com/ScorpionesLabs/MSSqlPwner
-cd MSSqlPwner && sudo python3 -m venv venv
-sudo /opt/MSSqlPwner/venv/bin/pip3 install -r requirements.txt
-cd $HOME
-
-# WhatWaf
-cd /opt
-sudo git clone https://github.com/Ekultek/WhatWaf
-cd WhatWaf && pip3 install -r requirements.txt
-cd $HOME
-
 # LeakSearch
 cd /opt
 sudo git clone https://github.com/JoelGMSec/LeakSearch
@@ -190,10 +155,7 @@ sudo git clone https://github.com/dirkjanm/krbrelayx
 cd $HOME
 
 # Coercer
-cd /opt
-sudo python3 -m venv Coercer
-sudo /opt/Coercer/bin/pip install coercer
-cd $HOME
+sudo pipx install coercer
 
 # apk2url
 cd /tmp
@@ -213,5 +175,4 @@ cd /opt
 sudo git clone https://github.com/NH-RED-TEAM/RustHound.git
 # cd RustHound &&  docker build --rm -t rusthound . 
 # docker run --rm -v /opt/RustHound:/usr/src/rusthound rusthound linux_musl
-# docker run --rm -v /opt/RustHound:/usr/src/rusthound rusthound linux_x86_64
 cd $HOME

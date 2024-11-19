@@ -152,13 +152,6 @@ cd web-wordlist-generator && sudo python3 -m venv venv
 sudo /opt/web-wordlist-generator/venv/bin/pip3 install -r requirements.txt
 cd $HOME
 
-# MSSqlPwner
-cd /opt
-sudo git clone https://github.com/ScorpionesLabs/MSSqlPwner
-cd MSSqlPwner && sudo python3 -m venv venv
-sudo /opt/MSSqlPwner/venv/bin/pip3 install -r requirements.txt
-cd $HOME
-
 # WhatWaf
 cd /opt
 sudo git clone https://github.com/Ekultek/WhatWaf

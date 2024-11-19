@@ -35,7 +35,10 @@ cd $HOME
 # pwn_nomal
 sudo gem install one_gadget
 sudo gem install seccomp-tools
-sudo python3 -m pip install pwntools
+cd /opt
+python3 -m venv pwntool
+sudo /opt/pwntools/bin/pip3 install pwntools
+sudo apt install gdb ropper -y
 sudo apt install gdb ropper -y
 cd /opt
 sudo git clone https://github.com/Rizer0/Ropdump
@@ -153,19 +156,6 @@ cd web-wordlist-generator && sudo python3 -m venv venv
 sudo /opt/web-wordlist-generator/venv/bin/pip3 install -r requirements.txt
 cd $HOME
 
-# MSSqlPwner
-cd /opt
-sudo git clone https://github.com/ScorpionesLabs/MSSqlPwner
-cd MSSqlPwner && sudo python3 -m venv venv
-sudo /opt/MSSqlPwner/venv/bin/pip3 install -r requirements.txt
-cd $HOME
-
-# WhatWaf
-cd /opt
-sudo git clone https://github.com/Ekultek/WhatWaf
-cd WhatWaf && pip3 install -r requirements.txt
-cd $HOME
-
 # LeakSearch
 cd /opt
 sudo git clone https://github.com/JoelGMSec/LeakSearch
@@ -190,10 +180,7 @@ sudo git clone https://github.com/dirkjanm/krbrelayx
 cd $HOME
 
 # Coercer
-cd /opt
-sudo python3 -m venv Coercer
-sudo /opt/Coercer/bin/pip install coercer
-cd $HOME
+sudo pipx install coercer
 
 # apk2url
 cd /tmp
