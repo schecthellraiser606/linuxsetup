@@ -21,6 +21,12 @@ sudo wget https://github.com/itm4n/PrintSpoofer/releases/download/v1.0/PrintSpoo
 sudo apt install steghide stegcracker -y
 sudo gem install zsteg
 
+# VScode
+cd /tmp
+wget --trust-server-names 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
+sudo apt install ./code_*_amd64.deb -y && rm ./code_*_amd64.deb
+cd $HOME
+
 # Ghostpack
 cd /usr/share/windows-resources/binaries
 sudo git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git

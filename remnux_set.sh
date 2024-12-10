@@ -16,6 +16,12 @@ cd $HOME
 sudo apt install steghide -y
 sudo gem install zsteg
 
+# VScode
+cd /tmp
+wget --trust-server-names 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
+sudo apt install ./code_*_amd64.deb -y && rm ./code_*_amd64.deb
+cd $HOME
+
 # ViperMonkey
 cd Documents
 git clone https://github.com/decalage2/ViperMonkey
