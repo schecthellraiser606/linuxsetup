@@ -22,29 +22,10 @@ wget --trust-server-names 'https://code.visualstudio.com/sha/download?build=stab
 sudo apt install ./code_*_amd64.deb -y && rm ./code_*_amd64.deb
 cd $HOME
 
-# ViperMonkey
-cd Documents
-git clone https://github.com/decalage2/ViperMonkey
-cd $HOME
-
-# CertVerify
-cd Documents
-git clone https://github.com/password123456/CertVerify
-cd CertVerify && python3 -m venv venv
-/home/remnux/Documents/CertVerify/venv/bin/pip3 install -r requirements.txt
-cd $HOME
-
 # angr
 cd Documents
 python3 -m venv anger
 /home/remnux/Documents/anger/bin/pip3 install angr monkeyhex
-cd $HOME
-
-#floss
-cd Documents
-wget https://github.com/mandiant/flare-floss/releases/download/quantumstrand-preview7/quantumstrand-quantumstrand-preview7-linux.zip
-unzip quantumstrand-quantumstrand-preview7-linux.zip && mv /home/remnux/Documents/quantumstrand ./floss 
-rm quantumstrand-quantumstrand-preview7-linux.zip
 cd $HOME
 
 # Ghidra Script
