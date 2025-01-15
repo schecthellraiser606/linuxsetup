@@ -10,6 +10,10 @@ sudo pip install msoffcrypto-tool
 python3 -m pip install pwntools
 cd Documents
 git clone https://github.com/scwuaptx/Pwngdb
+git clone https://github.com/longld/peda.git
+cd /tmp && wget https://raw.githubusercontent.com/schecthellraiser606/linuxsetup/main/remnux-gdbinit
+cat /tmp/remnux-gdbinit | sudo tee /etc/gdb/gdbinit
+rm cat /tmp/remnux-gdbinit
 cd $HOME
 
 # steg
