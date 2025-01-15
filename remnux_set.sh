@@ -13,7 +13,7 @@ git clone https://github.com/scwuaptx/Pwngdb
 git clone https://github.com/longld/peda.git
 cd /tmp && wget https://raw.githubusercontent.com/schecthellraiser606/linuxsetup/main/remnux-gdbinit
 cat /tmp/remnux-gdbinit | sudo tee /etc/gdb/gdbinit
-rm cat /tmp/remnux-gdbinit
+rm /tmp/remnux-gdbinit
 cd $HOME
 
 # steg
