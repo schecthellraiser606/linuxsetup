@@ -7,6 +7,9 @@ sudo pip install msoffcrypto-tool
 
 # pwntools
 # Please edit the gdbinit file for writing Pwngdb
+sudo gem install one_gadget
+sudo gem install seccomp-tools
+sudo apt install ropper -y
 python3 -m pip install pwntools
 cd Documents
 git clone https://github.com/scwuaptx/Pwngdb
