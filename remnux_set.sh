@@ -57,3 +57,5 @@ cd /tmp
 git clone https://github.com/n0mi1k/apk2url
 cd apk2url && sudo ./install.sh
 cd $HOME && rm -rf /tmp/apk2url
+
+sudo adduser $USER vboxsf
