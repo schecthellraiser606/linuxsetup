@@ -76,7 +76,6 @@ cd $HOME
 # Volatility3
 cd /opt
 sudo python3 -m venv volatility3
-sudo chown -R $USER:$USER ./volatility3
 cd /tmp
 wget https://github.com/volatilityfoundation/volatility3/releases/download/v2.11.0/volatility3-2.11.0-py3-none-any.whl
 sudo /opt/volatility3/bin/pip3 install /tmp/volatility3-2.11.0-py3-none-any.whl && rm /tmp/volatility3-2.11.0-py3-none-any.whl
@@ -171,6 +170,7 @@ cd /opt
 sudo git clone https://github.com/Ridter/noPac
 cd noPac && sudo python3 -m venv venv
 sudo /opt/noPac/venv/bin/pip3 install -r requirements.txt
+sudo /opt/noPac/venv/bin/pip3 install --upgrade setuptools
 cd $HOME
 
 # krbrelayx
@@ -180,6 +180,7 @@ cd $HOME
 
 # Coercer
 sudo pipx install coercer
+pipx install coercer
 
 # apk2url
 cd /tmp
@@ -191,14 +192,5 @@ cd $HOME && rm -rf /tmp/apk2url
 cd /opt
 sudo git clone https://github.com/d78ui98/APKDeepLens
 cd APKDeepLens && sudo python3 -m venv venv
-sudo chown -R $USER:$USER ./venv
 sudo /opt/APKDeepLens/venv/bin/pip3 install -r requirements.txt
-cd $HOME
-
-# Rusthound
-cd /opt
-sudo git clone https://github.com/NH-RED-TEAM/RustHound.git
-# cd RustHound &&  docker build --rm -t rusthound . 
-# docker run --rm -v /opt/RustHound:/usr/src/rusthound rusthound linux_musl
-# docker run --rm -v /opt/RustHound:/usr/src/rusthound rusthound linux_x86_64
 cd $HOME
