@@ -47,21 +47,9 @@ sudo /opt/pwntools/bin/pip3 install pwntools
 sudo apt install gdb ropper -y
 sudo apt install gdb ropper -y
 cd /opt
-sudo git clone https://github.com/Rizer0/Ropdump
-sudo git clone https://github.com/apogiatzis/gdb-peda-pwndbg-gef 
-sudo git clone https://github.com/scwuaptx/Pwngdb
-cd gdb-peda-pwndbg-gef && sudo ./install.sh
-sleep 2
-sudo mv /root/gef /opt
-sudo mv /root/pwndbg /opt
-sudo mv /root/peda /opt
-sudo mv /root/peda-arm /opt
-sudo rm /root/.gdbinit
-cd /tmp && wget https://raw.githubusercontent.com/schecthellraiser606/linuxsetup/main/gdbinit
-cat /tmp/gdbinit | sudo tee /etc/gdb/gdbinit
-rm /tmp/gdbinit
-echo "alias gdb='exec gdb -q -ex init-gdb \"\$@\"'" | sudo tee -a /root/.zshrc
-echo "alias gdb='exec gdb -q -ex init-gdb \"\$@\"'" >> $HOME/.zshrc
+sudo git clone https://github.com/pwndbg/pwndbg
+cd pwndbg && sudo ./setup.sh
+cd $HOME
 # pwninit
 cd /tmp
 wget https://github.com/io12/pwninit/releases/download/3.3.0/pwninit
