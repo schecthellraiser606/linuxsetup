@@ -2,8 +2,11 @@ sudo apt update && sudo apt upgrade -y
 
 sudo apt install python3-pip python3-venv -y
 sudo pipx ensurepath
+pipx ensurepath
 sudo pipx install uploadserver git-dumper msoffcrypto-tool
+pipx install uploadserver git-dumper msoffcrypto-tool
 sudo pipx install certipy-ad wsgidav sqlmc
+pipx install certipy-ad wsgidav sqlmc
 
 sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator seclists sshuttle peass jd-gui keepassx qemu-user powershell-empire snmp-mibs-downloader netexec cadaver hydra medusa irssi ltrace sippts -y
 sudo apt install mariadb-client-compat -y

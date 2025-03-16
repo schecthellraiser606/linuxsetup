@@ -2,8 +2,11 @@ sudo apt update && sudo apt upgrade -y
 
 sudo apt install python3-pip python3-venv -y
 sudo pipx ensurepath
+pipx ensurepath
 sudo pipx install uploadserver git-dumper msoffcrypto-tool
+pipx install uploadserver git-dumper msoffcrypto-tool
 sudo pipx install certipy-ad wsgidav sqlmc
+pipx install certipy-ad wsgidav sqlmc
 
 sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists patchelf mingw-w64 sshuttle xxd peass jd-gui keepassx powershell-empire snmp-mibs-downloader netexec hydra medusa -y
 sudo apt install wine shellter qemu-user cadaver irssi ltrace sippts -y
