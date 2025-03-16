@@ -9,7 +9,7 @@ sudo pipx install certipy-ad wsgidav sqlmc
 pipx install certipy-ad wsgidav sqlmc
 
 sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator seclists sshuttle peass jd-gui keepassx qemu-user powershell-empire snmp-mibs-downloader netexec cadaver hydra medusa irssi ltrace sippts -y
-sudo apt install mariadb-client-compat -y
+sudo apt install mariadb-client-compat libfreetype6-dev -y
 
 sudo wget https://raw.githubusercontent.com/flozz/p0wny-shell/master/shell.php -O /usr/share/webshells/php/p0wny-shell.php
 sudo wget https://github.com/mitchmoser/SharpShares/releases/download/v2.4/SharpShares.exe -O /usr/share/windows-resources/binaries/SharpShares.exe
@@ -54,6 +54,7 @@ cd $HOME
 # Volatility3
 cd /opt
 sudo python3 -m venv volatility3
+sudo chown -R $USER:$USER ./volatility3
 cd /tmp
 wget https://github.com/volatilityfoundation/volatility3/releases/download/v2.5.2/volatility3-2.5.2-py3-none-any.whl
 sudo /opt/volatility3/bin/pip3 install /tmp/volatility3-2.5.2-py3-none-any.whl && rm /tmp/volatility3-2.5.2-py3-none-any.whl
@@ -145,6 +146,8 @@ sudo mv /root/go/bin/smugglefuzz /usr/local/bin/
 cd /opt
 sudo git clone https://github.com/Ridter/noPac
 cd noPac && sudo python3 -m venv venv
+sudo chown -R $USER:$USER ./venv
+
 sudo /opt/noPac/venv/bin/pip3 install -r requirements.txt
 cd $HOME
 
@@ -166,6 +169,7 @@ cd $HOME && rm -rf /tmp/apk2url
 cd /opt
 sudo git clone https://github.com/d78ui98/APKDeepLens
 cd APKDeepLens && sudo python3 -m venv venv
+sudo chown -R $USER:$USER ./venv
 sudo /opt/APKDeepLens/venv/bin/pip3 install -r requirements.txt
 cd $HOME
 
