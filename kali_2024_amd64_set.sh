@@ -45,9 +45,8 @@ cd $HOME
 sudo gem install one_gadget
 sudo gem install seccomp-tools
 cd /opt
-python3 -m venv pwntool
+sudo python3 -m venv pwntools
 sudo /opt/pwntools/bin/pip3 install pwntools
-sudo apt install gdb ropper -y
 sudo apt install gdb ropper -y
 cd /opt
 sudo git clone https://github.com/pwndbg/pwndbg
