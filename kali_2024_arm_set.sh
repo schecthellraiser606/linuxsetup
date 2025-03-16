@@ -38,6 +38,7 @@ cd $HOME
 # pwn_nomal
 cd /opt
 sudo python3 -m venv pwntools
+sudo /opt/pwntools/bin/pip3 install capstone
 sudo /opt/pwntools/bin/pip3 install pwntools
 sudo apt install gdb ropper -y
 cd /opt
