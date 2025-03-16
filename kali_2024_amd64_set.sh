@@ -49,7 +49,7 @@ sudo apt install gdb ropper -y
 cd /opt
 sudo git clone https://github.com/pwndbg/pwndbg
 cd pwndbg && sudo ./setup.sh
-echo "source /opt/pwndbg/gdbinit.py" >> /etc/gdbinit/gdbinit
+echo "source /opt/pwndbg/gdbinit.py" | sudo tee -a /etc/gdb/gdbinit
 cd $HOME
 # pwninit
 cd /tmp
