@@ -60,6 +60,12 @@ wget https://github.com/io12/pwninit/releases/download/3.3.0/pwninit
 sudo chmod +x /tmp/pwninit && sudo mv /tmp/pwninit /usr/local/bin/pwninit
 cd $HOME
 
+# mimikatz
+cd /tmp
+wget https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20220919/mimikatz_trunk.zip
+sudo unzip mimikatz_trunk.zip -d /opt/mimikatz && sudo rm mimikatz_trunk.zip
+cd $HOME
+
 #floss
 cd /opt
 sudo wget https://github.com/mandiant/flare-floss/releases/download/quantumstrand-preview7/quantumstrand-quantumstrand-preview7-linux.zip

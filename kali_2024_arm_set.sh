@@ -47,6 +47,12 @@ cd pwndbg && sudo ./setup.sh
 echo "source /opt/pwndbg/gdbinit.py" | sudo tee -a /etc/gdb/gdbinit
 cd $HOME
 
+# mimikatz
+cd /tmp
+wget https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20220919/mimikatz_trunk.zip
+sudo unzip mimikatz_trunk.zip -d /opt/mimikatz && sudo rm mimikatz_trunk.zip
+cd $HOME
+
 # angr
 cd /opt
 sudo python3 -m venv anger
