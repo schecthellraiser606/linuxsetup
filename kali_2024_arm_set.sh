@@ -73,13 +73,6 @@ sudo git clone https://github.com/Dionach/CMSmap.git
 cd CMSmap && sudo pipx install .
 cd $HOME
 
-# Autorecon
-cd /opt
-sudo apt install feroxbuster oscanner tnscmd10g wkhtmltopdf -y
-sudo python3 -m venv autorecon
-sudo /opt/autorecon/bin/pip3 install git+https://github.com/Tib3rius/AutoRecon.git
-cd $HOME
-
 # Docker
 sudo apt install -y docker.io
 sudo usermod -aG docker $USER # sudo newgrp docker
