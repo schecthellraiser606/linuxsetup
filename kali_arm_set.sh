@@ -189,3 +189,11 @@ sudo git clone https://github.com/NH-RED-TEAM/RustHound.git
 # cd RustHound &&  docker build --rm -t rusthound . 
 # docker run --rm -v /opt/RustHound:/usr/src/rusthound rusthound linux_musl
 cd $HOME
+
+
+# Graphpython
+cd /opt 
+sudo git clone https://github.com/mlcsec/Graphpython
+cd Graphpython && sudo python3 -m venv venv
+sudo /opt/Graphpython/venv/bin/pip3 install .
+cd $HOME

@@ -171,3 +171,10 @@ sudo git clone https://github.com/d78ui98/APKDeepLens
 cd APKDeepLens && sudo python3 -m venv venv
 sudo /opt/APKDeepLens/venv/bin/pip3 install -r requirements.txt
 cd $HOME
+
+# Graphpython
+cd /opt 
+sudo git clone https://github.com/mlcsec/Graphpython
+cd Graphpython && sudo python3 -m venv venv
+sudo /opt/Graphpython/venv/bin/pip3 install .
+cd $HOME
