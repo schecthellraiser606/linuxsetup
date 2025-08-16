@@ -9,7 +9,7 @@ sudo pipx install certipy-ad wsgidav sqlmc
 pipx install certipy-ad wsgidav sqlmc
 
 sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator seclists sshuttle peass jd-gui keepassx qemu-user powershell-empire snmp-mibs-downloader netexec cadaver hydra medusa irssi ltrace sippts burpsuite -y
-sudo apt install mariadb-client-compat libfreetype6-dev autorecon bloodyad -y
+sudo apt install mariadb-client-compat libfreetype6-dev autorecon bloodyad pyenv -y
 sudo apt install kali-wallpapers-2023 -y
 
 sudo wget https://raw.githubusercontent.com/flozz/p0wny-shell/master/shell.php -O /usr/share/webshells/php/p0wny-shell.php
