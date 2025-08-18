@@ -207,3 +207,4 @@ sudo mkdir sliver && cd sliver
 sudo wget https://github.com/BishopFox/sliver/releases/download/v1.5.43/sliver-server_linux
 sudo wget https://github.com/BishopFox/sliver/releases/download/v1.5.43/sliver-client_linux
 chmod +x sliver-server_linux sliver-client_linux
+cd $HOME
