@@ -200,3 +200,10 @@ sudo git clone https://github.com/mlcsec/Graphpython
 cd Graphpython && sudo python3 -m venv venv
 sudo /opt/Graphpython/venv/bin/pip3 install .
 cd $HOME
+
+# Sliver
+cd /opt 
+sudo mkdir sliver && cd sliver
+sudo wget https://github.com/BishopFox/sliver/releases/download/v1.5.43/sliver-server_linux
+sudo wget https://github.com/BishopFox/sliver/releases/download/v1.5.43/sliver-client_linux
+chmod +x sliver-server_linux sliver-client_linux
