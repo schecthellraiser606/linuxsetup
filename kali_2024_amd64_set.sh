@@ -208,3 +208,9 @@ sudo wget https://github.com/BishopFox/sliver/releases/download/v1.5.43/sliver-s
 sudo wget https://github.com/BishopFox/sliver/releases/download/v1.5.43/sliver-client_linux
 chmod +x sliver-server_linux sliver-client_linux
 cd $HOME
+
+# donut
+cd /opt
+sudo git clone https://github.com/TheWover/donut
+cd donut && sudo make -f Makefile
+cd $HOME

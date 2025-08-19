@@ -178,3 +178,9 @@ sudo git clone https://github.com/mlcsec/Graphpython
 cd Graphpython && sudo python3 -m venv venv
 sudo /opt/Graphpython/venv/bin/pip3 install .
 cd $HOME
+
+# donut
+cd /opt
+sudo git clone https://github.com/TheWover/donut
+cd donut && sudo make -f Makefile
+cd $HOME
