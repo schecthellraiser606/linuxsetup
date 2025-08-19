@@ -8,7 +8,7 @@ pipx install uploadserver git-dumper msoffcrypto-tool
 sudo pipx install certipy-ad wsgidav sqlmc
 pipx install certipy-ad wsgidav sqlmc
 
-sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists patchelf mingw-w64 sshuttle xxd peass jd-gui keepassx powershell-empire snmp-mibs-downloader netexec hydra medusa -y
+sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists patchelf mingw-w64 sshuttle xxd peass jd-gui keepassx powershell-empire snmp-mibs-downloader netexec hydra medusa donut -y
 sudo apt install wine qemu-user cadaver irssi ltrace sippts pyenv -y
 sudo apt install mariadb-client-compat libfreetype6-dev ntpdate autorecon bloodyad -y
 sudo apt install kali-wallpapers-2023 -y
@@ -207,10 +207,4 @@ sudo mkdir sliver && cd sliver
 sudo wget https://github.com/BishopFox/sliver/releases/download/v1.5.43/sliver-server_linux
 sudo wget https://github.com/BishopFox/sliver/releases/download/v1.5.43/sliver-client_linux
 chmod +x sliver-server_linux sliver-client_linux
-cd $HOME
-
-# donut
-cd /opt
-sudo git clone https://github.com/TheWover/donut
-cd donut && sudo make -f Makefile
 cd $HOME

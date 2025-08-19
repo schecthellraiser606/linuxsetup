@@ -8,7 +8,7 @@ pipx install uploadserver git-dumper msoffcrypto-tool
 sudo pipx install certipy-ad wsgidav sqlmc
 pipx install certipy-ad wsgidav sqlmc
 
-sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator seclists sshuttle peass jd-gui keepassx qemu-user powershell-empire snmp-mibs-downloader netexec cadaver hydra medusa irssi ltrace sippts burpsuite -y
+sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator seclists sshuttle peass jd-gui keepassx qemu-user powershell-empire snmp-mibs-downloader netexec cadaver hydra medusa irssi ltrace sippts burpsuite donut -y
 sudo apt install mariadb-client-compat libfreetype6-dev autorecon bloodyad pyenv -y
 sudo apt install kali-wallpapers-2023 -y
 
@@ -177,10 +177,4 @@ cd /opt
 sudo git clone https://github.com/mlcsec/Graphpython
 cd Graphpython && sudo python3 -m venv venv
 sudo /opt/Graphpython/venv/bin/pip3 install .
-cd $HOME
-
-# donut
-cd /opt
-sudo git clone https://github.com/TheWover/donut
-cd donut && sudo make -f Makefile
 cd $HOME
