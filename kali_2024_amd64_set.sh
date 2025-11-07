@@ -202,9 +202,17 @@ sudo /opt/Graphpython/venv/bin/pip3 install .
 cd $HOME
 
 # Sliver
+sudo apt install rustup -y
+sudo rustup default stable
+sudo rustup target add x86_64-pc-windows-gnu
 cd /opt 
 sudo mkdir sliver && cd sliver
 sudo wget https://github.com/BishopFox/sliver/releases/download/v1.5.43/sliver-server_linux
-sudo wget https://github.com/BishopFox/sliver/releases/download/v1.5.43/sliver-client_linux
-chmod +x sliver-server_linux sliver-client_linux
+chmod +x sliver-server_linux 
+sudo git clone https://github.com/0xb11a1/sliver_extension_uac_bypass_cmstp
+cd sliver_extension_uac_bypass_cmstp
+sudo cargo build --release --lib --target x86_64-pc-windows-gnu
+sudo cp ./target/x86_64-pc-windows-gnu/release/uac_bypass_cmstp.dll ./
+## extensions install /opt/sliver/sliver_extension_uac_bypass_cmstp
+## extensions load /opt/sliver/sliver_extension_uac_bypass_cmstp
 cd $HOME
