@@ -8,7 +8,7 @@ pipx install uploadserver git-dumper msoffcrypto-tool
 sudo pipx install certipy-ad wsgidav sqlmc
 pipx install certipy-ad wsgidav sqlmc
 
-sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists patchelf mingw-w64 sshuttle xxd peass jd-gui keepassx powershell-empire snmp-mibs-downloader netexec hydra medusa donut -y
+sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists patchelf mingw-w64 sshuttle xxd peass jd-gui keepassx powershell-empire snmp-mibs-downloader netexec hydra medusa donut bloodhound-ce-python -y
 sudo apt install wine qemu-user cadaver irssi ltrace sippts pyenv -y
 sudo apt install mariadb-client-compat libfreetype6-dev ntpdate autorecon bloodyad -y
 sudo apt install kali-wallpapers-2023 -y
