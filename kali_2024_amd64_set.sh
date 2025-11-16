@@ -10,7 +10,7 @@ pipx install certipy-ad wsgidav sqlmc
 
 sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists patchelf mingw-w64 sshuttle xxd peass jd-gui keepassx powershell-empire snmp-mibs-downloader netexec hydra medusa donut bloodhound-ce-python -y
 sudo apt install wine qemu-user cadaver irssi ltrace sippts pyenv -y
-sudo apt install mariadb-client-compat libfreetype6-dev ntpdate autorecon bloodyad -y
+sudo apt install mariadb-client-compat libfreetype6-dev ntpdate autorecon bloodyad faketime krb5-pkinit -y
 sudo apt install kali-wallpapers-2023 -y
 
 sudo wget https://raw.githubusercontent.com/flozz/p0wny-shell/master/shell.php -O /usr/share/webshells/php/p0wny-shell.php
@@ -20,6 +20,10 @@ sudo wget https://github.com/BeichenDream/GodPotato/releases/download/V1.20/GodP
 sudo wget https://github.com/SnaffCon/Snaffler/releases/download/1.0.150/Snaffler.exe -O /usr/share/windows-resources/binaries/Snaffler.exe
 sudo wget https://github.com/AlessandroZ/LaZagne/releases/download/2.4.3/lazagne.exe -O /usr/share/windows-resources/binaries/lazagne.exe
 sudo wget https://github.com/itm4n/PrintSpoofer/releases/download/v1.0/PrintSpoofer64.exe -O /usr/share/windows-resources/binaries/PrintSpoofer64.exe
+
+# evil-winrm-py
+sudo pipx install evil-winrm-py[kerberos]
+pipx install evil-winrm-py[kerberos]
 
 # steg
 sudo apt install steghide stegcracker -y
