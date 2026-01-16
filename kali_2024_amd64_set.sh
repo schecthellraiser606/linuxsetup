@@ -110,12 +110,12 @@ cd /opt
 sudo mkdir ghidra_opt && cd ghidra_opt && sudo mkdir ghidra_scripts && cd ghidra_scripts
 sudo git clone https://github.com/AllsafeCyberSecurity/ghidra_scripts 
 sudo git clone https://github.com/ghidraninja/ghidra_scripts ninja_scripts
-sudo git clone https://github.com/AllsafeCyberSecurity/py-findcrypt-ghidra
-sudo git clone https://github.com/AllsafeCyberSecurity/LazyGhidra
+sudo git clone https://github.com/pinksawtooth/ghidra_scripts pink_scripts
 sudo wget https://raw.githubusercontent.com/mooncat-greenpy/Ghidra_GolangAnalyzerExtension/1584493a62db06348421c3455a4457ca68fd7013/ghidra_scripts/degobfuscate.py
 sudo git clone https://github.com/0xb0bb/pwndra
 cd /opt/ghidra_opt && sudo mkdir ghidra_DATA && cd ghidra_DATA
 sudo git clone https://github.com/AllsafeCyberSecurity/Ghidra_Data_Type
+sudo git clone https://github.com/AllsafeCyberSecurity/Ghidra_FIDB
 sudo git clone https://github.com/LAC-Japan/Ghidra_AntiDebugSeeker
 sudo wget https://github.com/nneonneo/ghidra-wasm-plugin/releases/download/v2.3.0/ghidra_11.0_PUBLIC_20240123_ghidra-wasm-plugin.zip
 cd $HOME
