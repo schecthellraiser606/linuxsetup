@@ -1,30 +1,23 @@
 cd $HOME
-sudo remnux upgrade
+remnux install
 sudo apt update && sudo apt upgrade -y
 
-sudo apt install python3-pip python3-venv terminator pff-tools thunderbird qemu-user -y
+sudo apt install terminator pff-tools thunderbird qemu-user -y
 
 # pwntools
 # Please edit the gdbinit file for writing Pwngdb
 sudo gem install seccomp-tools
-python3 -m pip install pwntools
 cd Documents
-git clone https://github.com/scwuaptx/Pwngdb
-git clone https://github.com/longld/peda.git
-cd /tmp && wget https://raw.githubusercontent.com/schecthellraiser606/linuxsetup/main/remnux-gdbinit
-cat /tmp/remnux-gdbinit | sudo tee /etc/gdb/gdbinit
-rm /tmp/remnux-gdbinit
+python3 -m venv pwntools
+/home/remnux/Documents/pwntools/bin/pip3 install pwntools
+cd /tmp
+wget https://github.com/pwndbg/pwndbg/releases/download/2026.02.18/pwndbg_2026.02.18_amd64.deb
+sudo apt install ./pwndbg_2026.02.18_amd64.deb -y && rm ./pwndbg_2026.02.18_amd64.deb
 cd $HOME
 
 # steg
 sudo apt install steghide -y
 sudo gem install zsteg
-
-# VScode
-cd /tmp
-wget --trust-server-names 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
-sudo apt install ./code_*_amd64.deb -y && rm ./code_*_amd64.deb
-cd $HOME
 
 # angr
 cd Documents
@@ -47,7 +40,6 @@ git clone https://github.com/AllsafeCyberSecurity/Ghidra_Data_Type
 cd $HOME
 
 # Docker
-sudo apt install -y docker.io
 sudo usermod -aG docker $USER
 
 # apk2url

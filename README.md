@@ -17,7 +17,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/schecthellraiser606/linuxs
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/schecthellraiser606/linuxsetup/main/kali_2024_arm_set.sh)"
 ```
+
 ## Remnux
+### Ubuntu 24.04
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/schecthellraiser606/linuxsetup/main/remnux_24_set.sh)"
+```
+### Ubuntu 22.04
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/schecthellraiser606/linuxsetup/main/remnux_set.sh)"
 ```
