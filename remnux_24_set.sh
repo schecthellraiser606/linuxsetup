@@ -1,5 +1,5 @@
 cd $HOME
-remnux install
+sudo remnux install
 sudo apt update && sudo apt upgrade -y
 
 sudo apt install terminator pff-tools thunderbird qemu-user -y
