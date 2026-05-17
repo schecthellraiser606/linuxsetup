@@ -9,7 +9,7 @@ sudo pipx install certipy-ad wsgidav sqlmc
 pipx install certipy-ad wsgidav sqlmc
 
 sudo apt install dnsmasq urlcrazy dirsearch libreoffice bloodhound ghidra gobuster golang php-curl terminator burpsuite seclists patchelf mingw-w64 sshuttle xxd peass jd-gui keepassx powershell-empire snmp-mibs-downloader netexec hydra medusa donut bloodhound-ce-python -y
-sudo apt install wine qemu-user cadaver irssi ltrace sippts pyenv -y
+sudo apt install wine qemu-user cadaver irssi ltrace sippts pyenv jsbeautifier jq -y
 sudo apt install mariadb-client-compat libfreetype6-dev ntpdate autorecon bloodyad faketime krb5-pkinit -y
 sudo apt install kali-wallpapers-2023 -y
 
