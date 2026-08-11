@@ -220,3 +220,7 @@ sudo cp ./target/x86_64-pc-windows-gnu/release/uac_bypass_cmstp.dll ./
 ## extensions install /opt/sliver/sliver_extension_uac_bypass_cmstp
 ## extensions load /opt/sliver/sliver_extension_uac_bypass_cmstp
 cd $HOME
+
+# RustHound
+sudo cargo install rusthound-ce
+sudo mv /root/.cargo/bin/rusthound-ce /usr/local/bin/
